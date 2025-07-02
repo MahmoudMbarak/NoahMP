@@ -5,7 +5,7 @@ This repository contains scripts and utilities for working with NoahMP land surf
 July 2nd 2025 Update:
 NLDAS recently changed their data format from GRIB to NetCDF. The new extraction scripts  handle this transition while keeping the NoahMP workflow unchanged.
 
-Scripts
+### Scripts
 
 apcp.py - Processes precipitation data with proper accumulation metadata
 
