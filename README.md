@@ -40,12 +40,15 @@ For Initial Conditions (init.py)
   extract_nldas.perl: Extracts individual meteorological variables from NLDAS NetCDF files
   In extract_nldas.perl, users need to modify these key settings:
   
-  $data_dir = "/path/to/your/NLDAS_FORA_data/";     # Input directory
-  $results_dir = "/path/to/output/forcing/";        # Output directory  
-  $wgrib = "/path/to/wgrib";                        # Path to wgrib executable
+  data_dir = "/path/to/your/NLDAS_FORA_data/";     # Input directory
+  
+  results_dir = "/path/to/output/forcing/";        # Output directory  
+  
+  wgrib = "/path/to/wgrib";                        # Path to wgrib executable
 
   Set the time period (Julian days):
   day_start = 1;     # January 1st
+  
   day_end = 365;     # December 31st (use 366 for leap years)
 
 Run the script:
@@ -55,11 +58,14 @@ perl extract_nldas.perl
   apcp.py: Processes precipitation data from NLDAS forcing files
 
   In apcp.py, modify these settings:
-  pythondata_dir = "/path/to/your/NLDAS_FORA_data/"      # Input directory
+  data_dir = "/path/to/your/NLDAS_FORA_data/"      # Input directory
+  
   results_dir = "/path/to/output/forcing/"               # Output directory
+  
   wgrib = "/path/to/wgrib"                               # Path to wgrib executable
 
   day_start = 1
+  
   day_end = 365
   
 Run the script:
@@ -70,11 +76,14 @@ python apcp.py
   init.py: Extract initial-only fields (SWE, CanopInt, AvgSurfT, SoilM_0-200cm, SoilT_0-200cm) from NLDAS Noah NetCDF files
   
   Change the initialization date and paths in init.py:
-  pythondata_dir = "/path/to/your/NLDAS_NOAH_data/"      # Input directory  
+  data_dir = "/path/to/your/NLDAS_NOAH_data/"      # Input directory  
+  
   results_dir = "/path/to/output/init/"            # Output directory
+  
   wgrib = "/path/to/wgrib"                         # Path to wgrib executable
 
   date = "20170101"   # Set initialization date (YYYYMMDD)
+  
   hh = "01"           # Set initialization hour
 
 Run the script:
