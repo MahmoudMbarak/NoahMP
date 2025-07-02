@@ -3,7 +3,7 @@
 This repository contains scripts and utilities for working with NoahMP land surface model.
 
 July 2025 Update:
-NLDAS recently changed their data format from GRIB to NetCDF. The new extraction scripts  handle this transition while keeping the NoahMP workflow unchanged.
+NLDAS recently changed their data format from GRIB to NetCDF (https://disc.gsfc.nasa.gov/datasets?keywords=NLDAS). The new extraction scripts  handle this transition while keeping the NoahMP workflow unchanged.
 
 ## Scripts
 
