@@ -1,6 +1,6 @@
 # NoahMP Related Code
 
-This repository contains scripts and utilities for working with NoahMP (Noah with Multi-Physics) land surface model.
+This repository contains scripts and utilities for working with NoahMP land surface model.
 
 July 2nd 2025 Update:
 NLDAS recently changed their data format from GRIB to NetCDF. The new extraction scripts  handle this transition while keeping the NoahMP workflow unchanged.
