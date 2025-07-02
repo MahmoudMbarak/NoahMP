@@ -60,6 +60,7 @@ perl extract_nldas.perl
 **apcp.py**: Processes precipitation data from NLDAS forcing files
 
 In apcp.py, modify these settings:
+
 data_dir = "/path/to/your/NLDAS_FORA_data/"      # Input directory
 
 results_dir = "/path/to/output/forcing/"         # Output directory
@@ -78,6 +79,7 @@ python apcp.py
 **init.py**: Extract initial-only fields (SWE, CanopInt, AvgSurfT, SoilM_0-200cm, SoilT_0-200cm) from NLDAS Noah NetCDF files
 
 Change the initialization date and paths in init.py:
+
 data_dir = "/path/to/your/NLDAS_NOAH_data/"      # Input directory
 
 results_dir = "/path/to/output/init/"            # Output directory
