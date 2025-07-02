@@ -5,7 +5,7 @@ This repository contains scripts and utilities for working with NoahMP land surf
 July 2nd 2025 Update:
 NLDAS recently changed their data format from GRIB to NetCDF. The new extraction scripts  handle this transition while keeping the NoahMP workflow unchanged.
 
-### Scripts
+## Scripts
 
 apcp.py - Processes precipitation data with proper accumulation metadata
 
@@ -13,7 +13,7 @@ init.py - Extracts initial condition variables and converts them to GRIB format
 
 extract_nldas.perl - Extracts: Downward longwave radiation flux (W/m²), Downward shortwave radiation flux (W/m²), Surface pressure (Pa) ,Air temperature at 2m (K), Specific humidity at 2m (kg/kg), U-component wind at 10m (m/s), V-component wind at 10m (m/s)
 
-Usage
+## Usage
 
 Dependencies
 You will need CDO module, wgrib, and python/perl for these scripts. 
@@ -55,7 +55,6 @@ For Forcing Data (apcp.py and extract_nldas.perl)
   day_start = 1;     # January 1st
   day_end = 365;     # December 31st (use 366 for leap years)
 
-Variables extracted: Downward longwave radiation flux, downward shortwave radiation flux, surface pressure, air temperature at 2m, specific humidity at 2m, U/V-component wind at 10m.
 Run the script:
 perl extract_nldas.perl
 
@@ -76,6 +75,7 @@ python apcp.py
   2. Extract Initial Condition Data
 
   init.py: Extract initial-only fields (SWE, CanopInt, AvgSurfT, SoilM_0-200cm, SoilT_0-200cm) from NLDAS Noah NetCDF files
+  
   Change the initialization date and paths in init.py:
   pythondata_dir = "/path/to/your/NLDAS_NOAH_data/"      # Input directory  
   results_dir = "/path/to/output/init/"            # Output directory
@@ -86,4 +86,5 @@ python apcp.py
 
 Run the script:
 python init.py
+
 The processed files will appear in your specified results directories, ready for use with Noah-MP create_forcing scripts.
