@@ -19,7 +19,6 @@ Dependencies
 You will need CDO module, wgrib, and python/perl for these scripts. 
 
 Download NLDAS data from NASA Goddard Earth Sciences Data:
-
 For Forcing Data (apcp.py and extract_nldas.perl)
   Dataset: NLDAS_FORA0125_H_2.0
 
