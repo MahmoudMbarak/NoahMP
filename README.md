@@ -18,7 +18,7 @@ extract_nldas.perl - Extracts: Downward longwave radiation flux (W/m²), Downwar
 ### Dependencies
 You will need CDO module, wgrib, and python/perl for these scripts.
 
-### Download NLDAS Data from NASA Goddard Earth Sciences Data:
+### Download NLDAS Data from NASA Goddard Earth Sciences Data: https://disc.gsfc.nasa.gov/datasets?keywords=NLDAS
 
 **For Forcing Data** (apcp.py and extract_nldas.perl)
 - Dataset: NLDAS_FORA0125_H_2.0
