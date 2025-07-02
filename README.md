@@ -24,13 +24,14 @@ For Forcing Data (apcp.py and extract_nldas.perl)
   Dataset: NLDAS_FORA0125_H_2.0
 
   Navigate to the NLDAS_FORA0125_H_2.0 dataset page
-  Select your desired time period and region
+  
   Download the NetCDF files (format: NLDAS_FORA0125_H.AYYYYMMDD.HHMM.020.nc)
 
 For Initial Conditions (init.py)
   Dataset: NLDAS_NOAH0125_H_2.0
 
   Navigate to the NLDAS_NOAH0125_H_2.0 dataset page
+  
   Download the NetCDF file for your initialization date (format: NLDAS_NOAH0125_H.AYYYYMMDD.HHMM.020.nc)
 
 1. Pre-processing NLDAS Forcing Data
