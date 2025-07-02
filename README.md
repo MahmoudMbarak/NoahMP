@@ -21,11 +21,7 @@ You will need CDO module, wgrib, and python/perl for these scripts.
 module load cdo
 module load wgrib
 
-Download NLDAS Data
-
 Download NLDAS data from NASA Goddard Earth Sciences Data:
-
-Create an account at https://disc.gsfc.nasa.gov/
 
 For Forcing Data (apcp.py and extract_nldas.perl)
   Dataset: NLDAS_FORA0125_H_2.0
@@ -34,7 +30,7 @@ For Forcing Data (apcp.py and extract_nldas.perl)
   Select your desired time period and region
   Download the NetCDF files (format: NLDAS_FORA0125_H.AYYYYMMDD.HHMM.020.nc)
 
-  For Initial Conditions (init.py)
+For Initial Conditions (init.py)
   Dataset: NLDAS_NOAH0125_H_2.0
 
   Navigate to the NLDAS_NOAH0125_H_2.0 dataset page
