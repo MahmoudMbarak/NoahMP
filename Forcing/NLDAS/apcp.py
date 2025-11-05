@@ -68,10 +68,12 @@ def fix_apcp_grib(grib_file):
     # Byte 21 (index 20): timeRangeIndicator - change from 10 to 4
     
     # Change timeRangeIndicator from 10 to 4
-    if data[pds_start + 20] == 10:
-        data[pds_start + 20] = 4
-        print(f"  Changed timeRangeIndicator: 10 -> 4")
-    
+    # The if statement might not necessary -- Important if you want to change the code. 
+    # if data[pds_start + 20] == 10:
+    #    data[pds_start + 20] = 4
+    #    print(f"  Changed timeRangeIndicator: 10 -> 4")
+    data[pds_start + 20] = 4
+
     # Change P2 from 0 to 1
     if data[pds_start + 19] == 0:
         data[pds_start + 19] = 1
